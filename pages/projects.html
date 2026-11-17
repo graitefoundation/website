@@ -1,0 +1,537 @@
+```html
+<!-- PAGE HEADING -->
+<div class="w3-container" style="margin-top:0">
+    <h1>AI Projects & Initiatives</h1>
+    <p>
+        Exploring the possibilities of Artificial Intelligence through scientific research,
+        education, capacity building and practical engineering solutions.
+        GRAITE seeks to encourage projects that advance responsible AI and create
+        measurable value for society, science and industry.
+    </p>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="w3-container" style="margin-top:65px">
+    <h5 class="section-label">OUR PROJECT PORTFOLIO</h5>
+    <h4>From Research to Real-World Impact</h4>
+    <p>
+        GRAITE envisions a global portfolio of collaborative AI initiatives.
+        Projects may be developed by research teams, universities, country chapters,
+        industry partners, educators and independent innovators.
+        The examples below illustrate potential areas of work and are not a list
+        of currently active or funded projects.
+    </p>
+</div>
+
+<!-- PROJECT FILTERS -->
+<div class="w3-container" style="margin-top:45px">
+    <h5 class="section-label">EXPLORE PROJECTS</h5>
+
+    <div class="w3-row-padding" style="margin-left:-8px;margin-right:-8px">
+
+        <div class="w3-third w3-margin-bottom">
+            <label><b>Project Type</b></label>
+            <select id="projectTypeFilter" class="w3-select w3-border"
+                    onchange="filterGRAITEProjects()">
+                <option value="all">All Project Types</option>
+                <option value="research">Research</option>
+                <option value="education">Education</option>
+                <option value="training">Training</option>
+                <option value="engineering">Engineering</option>
+            </select>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <label><b>Country</b></label>
+            <select id="projectCountryFilter" class="w3-select w3-border"
+                    onchange="filterGRAITEProjects()">
+                <option value="all">All Countries</option>
+                <option value="india">India</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+                <option value="united-states">United States</option>
+                <option value="kenya">Kenya</option>
+                <option value="brazil">Brazil</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="south-africa">South Africa</option>
+                <option value="singapore">Singapore</option>
+                <option value="netherlands">Netherlands</option>
+            </select>
+        </div>
+
+        <div class="w3-third w3-margin-bottom">
+            <label><b>Project Status</b></label>
+            <select id="projectStatusFilter" class="w3-select w3-border"
+                    onchange="filterGRAITEProjects()">
+                <option value="all">All Project Statuses</option>
+                <option value="seed">Seed</option>
+                <option value="idea">Idea</option>
+                <option value="development">Development</option>
+                <option value="testing">Testing</option>
+                <option value="rolling-live">Rolling Live</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div style="margin-top:15px;margin-bottom:25px">
+        <span id="projectResultCount" style="color:#777">
+            Showing 13 projects
+        </span>
+
+        <a href="javascript:void(0)"
+           onclick="resetGRAITEProjectFilters()"
+           style="float:right;color:#8052a8;text-decoration:none">
+            Reset Filters ⟶
+        </a>
+    </div>
+</div>
+
+<!-- PROJECT PORTFOLIO -->
+<div class="w3-container" id="graiteProjectPortfolio">
+
+    <!-- RESEARCH / INDIA -->
+    <div class="project-item"
+         data-type="research" data-country="india" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">RESEARCH / INDIA</h5>
+        <h4>AI for Early Detection of Agricultural Crop Diseases</h4>
+        <p>
+            Exploring AI models that analyse crop images, environmental conditions
+            and agricultural data to identify early signs of disease and support
+            timely intervention by farmers.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential work includes image-based disease identification, regional
+                crop datasets, model validation across different agricultural conditions
+                and decision-support tools for agricultural extension networks.
+                The project could involve agricultural universities, local researchers
+                and farming communities.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- RESEARCH / GERMANY -->
+    <div class="project-item"
+         data-type="research" data-country="germany" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">RESEARCH / GERMANY</h5>
+        <h4>Explainable AI for Scientific Discovery</h4>
+        <p>
+            Investigating methods that make AI-generated scientific predictions
+            more interpretable, traceable and useful to researchers working
+            across scientific disciplines.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Research may examine model explanations, uncertainty estimation,
+                evidence tracing and reproducibility. The objective is to help
+                scientists understand not only what a model predicts, but also
+                the evidence and limitations behind its output.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- RESEARCH / JAPAN -->
+    <div class="project-item"
+         data-type="research" data-country="japan" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">RESEARCH / JAPAN</h5>
+        <h4>Human–AI Collaboration and Autonomous Learning</h4>
+        <p>
+            Studying how AI systems can learn from interaction, feedback and
+            experience while maintaining appropriate human oversight and control.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential research areas include continual learning, adaptive systems,
+                human feedback, memory, learning from physical environments and
+                evaluation of autonomous behaviour. Particular attention would be
+                given to safety, controllability and learning boundaries.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- RESEARCH / UNITED STATES -->
+    <div class="project-item"
+         data-type="research" data-country="united-states" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">RESEARCH / UNITED STATES</h5>
+        <h4>AI Safety, Reliability and Decision Validation</h4>
+        <p>
+            Developing and evaluating approaches that help AI systems identify
+            uncertainty, detect unreliable outputs and distinguish recommendations
+            from decisions that require human authorization.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Possible work includes model evaluation, adversarial testing,
+                hallucination detection, decision traceability, risk assessment
+                and governance frameworks for AI applications in high-impact settings.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- EDUCATION / KENYA -->
+    <div class="project-item"
+         data-type="education" data-country="kenya" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">EDUCATION / KENYA</h5>
+        <h4>AI Literacy for Schools and Rural Communities</h4>
+        <p>
+            Exploring accessible AI learning programmes for students, teachers
+            and communities, with an emphasis on practical understanding,
+            responsible use and real-world problem solving.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential activities include introductory AI learning modules,
+                local-language educational resources, teacher orientation,
+                community workshops and practical projects addressing local needs.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- EDUCATION / INDIA -->
+    <div class="project-item"
+         data-type="education" data-country="india" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">EDUCATION / INDIA</h5>
+        <h4>AI Research Fellowship for Emerging Scientists</h4>
+        <p>
+            Envisioning a fellowship pathway to encourage students and early-career
+            researchers to explore AI research, interdisciplinary innovation
+            and responsible technology development.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                A prospective programme could include research mentorship,
+                collaborative projects, expert seminars, research presentations
+                and opportunities to contribute to open research initiatives.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- EDUCATION / BRAZIL -->
+    <div class="project-item"
+         data-type="education" data-country="brazil" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">EDUCATION / BRAZIL</h5>
+        <h4>AI for Inclusive and Accessible Learning</h4>
+        <p>
+            Exploring AI-enabled learning experiences that can adapt educational
+            content to different learning needs, languages and levels of access.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential areas include adaptive learning tools, multilingual
+                educational assistants, accessibility support and teacher-focused
+                AI resources. The initiative would examine learning outcomes,
+                inclusion and responsible data use.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- TRAINING / UNITED KINGDOM -->
+    <div class="project-item"
+         data-type="training" data-country="united-kingdom" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">TRAINING / UNITED KINGDOM</h5>
+        <h4>AI Leadership and Governance Programme</h4>
+        <p>
+            A proposed leadership development initiative to help executives,
+            public institutions and organisational leaders understand AI strategy,
+            governance, risk and organisational transformation.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Possible modules include AI readiness, AI opportunity discovery,
+                governance structures, human oversight, AI project evaluation
+                and the development of practical organisational AI roadmaps.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- TRAINING / SOUTH AFRICA -->
+    <div class="project-item"
+         data-type="training" data-country="south-africa" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">TRAINING / SOUTH AFRICA</h5>
+        <h4>AI Skills Development for the Future Workforce</h4>
+        <p>
+            Exploring practical training pathways for students, professionals
+            and workforce development organisations to build capabilities
+            relevant to an AI-enabled economy.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential training areas include AI fundamentals, data literacy,
+                automation, applied AI tools, responsible AI practices and
+                project-based learning developed in collaboration with
+                educational and industry partners.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- ENGINEERING / SINGAPORE -->
+    <div class="project-item"
+         data-type="engineering" data-country="singapore" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">ENGINEERING / SINGAPORE</h5>
+        <h4>AI-Powered Predictive Maintenance for Industry</h4>
+        <p>
+            Exploring intelligent systems that analyse machine sensor data,
+            operating conditions and maintenance history to identify potential
+            equipment failures before they cause major disruption.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential engineering components include industrial data connectors,
+                anomaly detection, predictive models, maintenance alerts and
+                integration with manufacturing and enterprise systems.
+                Recommendations would be validated before operational action.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- ENGINEERING / INDIA -->
+    <div class="project-item"
+         data-type="engineering" data-country="india" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">ENGINEERING / INDIA</h5>
+        <h4>Intelligent Inventory and Supply Chain Optimisation</h4>
+        <p>
+            Developing potential AI solutions to help organisations understand
+            inventory patterns, anticipate demand, identify supply risks
+            and improve material planning.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                The project could connect ERP, warehouse and procurement data
+                with diagnostic and predictive models. Potential outputs include
+                stock-out alerts, excess inventory identification, demand forecasts
+                and suggested replenishment actions.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- ENGINEERING / NETHERLANDS -->
+    <div class="project-item"
+         data-type="engineering" data-country="netherlands" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">ENGINEERING / NETHERLANDS</h5>
+        <h4>AI for Smart Ports and Transport Operations</h4>
+        <p>
+            Exploring AI applications for port operations, cargo movement,
+            transport coordination and logistics planning to improve efficiency,
+            visibility and operational decision-making.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential solutions include congestion prediction, vessel and
+                cargo movement analysis, resource scheduling, delay alerts
+                and operational dashboards. The project may connect multiple
+                stakeholders while respecting data access and operational controls.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- ENGINEERING / UNITED STATES -->
+    <div class="project-item"
+         data-type="engineering" data-country="united-states" data-status="idea">
+        <h5 class="section-label" style="color:#8052a8">ENGINEERING / UNITED STATES</h5>
+        <h4>AI-Based Energy Efficiency for Smart Buildings</h4>
+        <p>
+            Exploring intelligent building systems that analyse energy consumption,
+            occupancy and environmental conditions to identify opportunities
+            for more efficient energy use.
+        </p>
+        <details>
+            <summary style="cursor:pointer;color:#8052a8;margin-top:15px">
+                <span style="font-size:22px">⟶</span> Show more
+            </summary>
+            <p>
+                Potential capabilities include energy demand forecasting,
+                equipment performance monitoring, anomaly detection and
+                recommendations for building operations, with human approval
+                for changes to critical systems.
+            </p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div id="noProjectResults" style="display:none;margin-top:30px;margin-bottom:40px">
+        <h4>No projects match your filters.</h4>
+        <p>Try changing your selection or reset the filters to view all projects.</p>
+    </div>
+
+</div>
+
+<!-- COLLABORATION -->
+<div class="w3-container" style="margin-top:75px;margin-bottom:65px">
+    <h5 class="section-label">CONTRIBUTE TO THE GLOBAL PORTFOLIO</h5>
+    <h4>Have an Idea? Build It with GRAITE.</h4>
+    <p>
+        GRAITE welcomes expressions of interest from researchers, educators,
+        engineers, institutions, industry professionals and innovators who
+        wish to explore collaborative AI initiatives.
+    </p>
+    <p>
+        Projects may be proposed through a Country Chapter, research group,
+        institutional partnership or direct collaboration with GRAITE.
+        Each proposal may be subject to review for research merit, feasibility,
+        responsible AI considerations, resources and potential impact.
+    </p>
+    <p>
+        <a href="join-graite" style="color:#8052a8;text-decoration:none">
+            Explore Membership <span style="font-size:22px">⟶</span>
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="contact-us" style="color:#8052a8;text-decoration:none">
+            Propose a Collaboration <span style="font-size:22px">⟶</span>
+        </a>
+    </p>
+</div>
+
+<!-- PROJECT FILTER JAVASCRIPT -->
+<script>
+
+
+// GRAITE PROJECT FILTER
+
+document.addEventListener("change", function (event) {
+
+    if (
+        event.target.id === "projectTypeFilter" ||
+        event.target.id === "projectCountryFilter" ||
+        event.target.id === "projectStatusFilter"
+    ) {
+        filterGRAITEProjects();
+    }
+
+});
+
+
+// RESET FILTERS
+
+document.addEventListener("click", function (event) {
+
+    if (event.target.closest("#resetProjectFilters")) {
+
+        const type = document.getElementById("projectTypeFilter");
+        const country = document.getElementById("projectCountryFilter");
+        const status = document.getElementById("projectStatusFilter");
+
+        if (type) type.value = "all";
+        if (country) country.value = "all";
+        if (status) status.value = "all";
+
+        filterGRAITEProjects();
+    }
+
+});
+
+
+// FILTER PROJECTS
+
+function filterGRAITEProjects() {
+
+    const typeElement = document.getElementById("projectTypeFilter");
+    const countryElement = document.getElementById("projectCountryFilter");
+    const statusElement = document.getElementById("projectStatusFilter");
+
+    const portfolio = document.getElementById("graiteProjectPortfolio");
+
+    if (!typeElement || !countryElement || !statusElement || !portfolio) {
+        return;
+    }
+
+    const selectedType = typeElement.value;
+    const selectedCountry = countryElement.value;
+    const selectedStatus = statusElement.value;
+
+    const projects = portfolio.querySelectorAll(".project-item");
+
+    let visibleCount = 0;
+
+    projects.forEach(function (project) {
+
+        const matchesType =
+            selectedType === "all" ||
+            project.dataset.type === selectedType;
+
+        const matchesCountry =
+            selectedCountry === "all" ||
+            project.dataset.country === selectedCountry;
+
+        const matchesStatus =
+            selectedStatus === "all" ||
+            project.dataset.status === selectedStatus;
+
+        const show =
+            matchesType && matchesCountry && matchesStatus;
+
+        project.style.display = show ? "" : "none";
+
+        if (show) {
+            visibleCount++;
+        }
+
+    });
+
+    const result = document.getElementById("projectResultCount");
+
+    if (result) {
+        result.textContent =
+            "Showing " + visibleCount + " of " +
+            projects.length + " projects";
+    }
+
+    const noResults = document.getElementById("noProjectResults");
+
+    if (noResults) {
+        noResults.style.display =
+            visibleCount === 0 ? "block" : "none";
+    }
+
+}
+
+</script>

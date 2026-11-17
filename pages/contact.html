@@ -1,0 +1,200 @@
+ 
+<!-- PAGE HEADING -->
+<div class="w3-container" style="margin-top:0">
+    <h1>Contact GRAITE</h1>
+    <p class="w3-large">Connect. Collaborate. Contribute.</p>
+    <p>
+        Whether you wish to explore a research collaboration, connect
+        with our global community, enquire about our initiatives or
+        reach out to us for any other purpose, we welcome your message.
+    </p>
+    <p>
+        Please select the appropriate purpose of contact so that your
+        enquiry can be directed to the relevant team or Country Chapter.
+    </p>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="w3-container" style="margin-top:65px; margin-bottom:60px">
+
+    <h5 class="section-label">GET IN TOUCH</h5>
+    <h4>Send Us an Enquiry</h4>
+    <p>
+        Please provide the details below. Our team will review your
+        enquiry and respond through the contact details provided.
+    </p>
+
+    <form id="graiteContactForm" class="w3-container"
+          style="padding:0; margin-top:30px">
+
+        <!-- PURPOSE -->
+        <label><b>Purpose of Contact</b></label>
+        <select class="w3-select w3-border w3-round"
+                name="contact_purpose" id="contactPurpose"
+                required
+                style="margin-top:8px; margin-bottom:22px">
+            <option value="" disabled selected>Select purpose of contact</option>
+
+            <optgroup label="General Enquiries">
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Membership Enquiry">Membership Enquiry</option>
+                <option value="Country Chapter Enquiry">Country Chapter Enquiry</option>
+                <option value="Council and Governance Enquiry">Council & Governance Enquiry</option>
+            </optgroup>
+
+            <optgroup label="Research & Education">
+                <option value="Research Collaboration">Research Collaboration</option>
+                <option value="Research Publication">Research & Publication Enquiry</option>
+                <option value="Education and Training">Education & Training</option>
+                <option value="Fellowship and Scholarship">Fellowship & Scholarship Enquiry</option>
+                <option value="Grants and Funding">Grants & Funding Enquiry</option>
+            </optgroup>
+
+            <optgroup label="Partnerships & Institutional Relations">
+                <option value="Institutional Partnership">Institutional Partnership</option>
+                <option value="Industry Partnership">Industry Partnership</option>
+                <option value="Academic Association">Academic Association</option>
+                <option value="Professional Associate">Professional / Associate Enquiry</option>
+                <option value="Grants and Donations">Grants & Donations</option>
+            </optgroup>
+
+            <optgroup label="Media & Communications">
+                <option value="Media Inquiry">Media Inquiry</option>
+                <option value="Press and Public Relations">Press & Public Relations</option>
+                <option value="Speaking and Event Invitation">Speaking & Event Invitation</option>
+            </optgroup>
+
+            <optgroup label="Careers & Opportunities">
+                <option value="Career Opportunity">Career Opportunity</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Internship">Internship</option>
+                <option value="Researcher and Expert Association">Researcher / Expert Association</option>
+            </optgroup>
+
+            <optgroup label="Reporting & Other Matters">
+                <option value="Report Scam or Fraud">Report Scam / Fraud / Impersonation</option>
+                <option value="Report Misuse of GRAITE Identity">Report Misuse of GRAITE Name or Identity</option>
+                <option value="Ethics and Research Integrity">Ethics & Research Integrity Concern</option>
+                <option value="Privacy Concern">Privacy / Data Protection Concern</option>
+                <option value="Website Technical Issue">Website / Technical Issue</option>
+                <option value="Other">Other Enquiry</option>
+            </optgroup>
+        </select>
+
+        <!-- NAME -->
+        <label><b>Full Name</b></label>
+        <input class="w3-input w3-border w3-round"
+               type="text" name="full_name"
+               placeholder="Enter your full name"
+               required
+               style="margin-top:8px; margin-bottom:22px">
+
+        <!-- EMAIL -->
+        <label><b>Email Address</b></label>
+        <input class="w3-input w3-border w3-round"
+               type="email" name="email"
+               placeholder="Enter your email address"
+               required
+               style="margin-top:8px; margin-bottom:22px">
+
+        <!-- PHONE -->
+        <label><b>Contact Number <span class="w3-text-grey">(Optional)</span></b></label>
+        <input class="w3-input w3-border w3-round"
+               type="tel" name="phone"
+               placeholder="Include country code"
+               style="margin-top:8px; margin-bottom:22px">
+
+        <!-- COUNTRY -->
+        <label><b>Country</b></label>
+        <select class="w3-select w3-border w3-round"
+                name="country"
+                style="margin-top:8px; margin-bottom:22px">
+            <option value="" disabled selected>Select your country</option>
+            <option value="India">India</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Japan">Japan</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- ORGANISATION -->
+        <label><b>Organisation / Institution <span class="w3-text-grey">(Optional)</span></b></label>
+        <input class="w3-input w3-border w3-round"
+               type="text" name="organisation"
+               placeholder="Your organisation or institution"
+               style="margin-top:8px; margin-bottom:22px">
+
+        <!-- SUBJECT -->
+        <label><b>Subject</b></label>
+        <input class="w3-input w3-border w3-round"
+               type="text" name="subject"
+               placeholder="Enter the subject of your enquiry"
+               required
+               style="margin-top:8px; margin-bottom:22px">
+
+        <!-- MESSAGE -->
+        <label><b>Message</b></label>
+        <textarea class="w3-input w3-border w3-round"
+                  name="message" rows="6"
+                  placeholder="Please describe your enquiry in detail..."
+                  required
+                  style="margin-top:8px; margin-bottom:22px"></textarea>
+
+        <!-- PRIVACY CONSENT -->
+        <p style="margin-top:15px">
+            <input class="w3-check" type="checkbox"
+                   id="graitePrivacyConsent"
+                   name="privacy_consent"
+                   value="yes" required>
+            <label for="graitePrivacyConsent">
+                I agree that GRAITE may use the information provided
+                to process and respond to my enquiry in accordance
+                with its
+                <a href="privacy-policy" target="_blank">Privacy Policy</a>.
+            </label>
+        </p>
+
+        <!-- SUBMIT -->
+        <button class="w3-button w3-black w3-round"
+                type="submit" style="margin-top:20px">
+            Submit Enquiry
+        </button>
+
+        <p class="w3-small w3-text-grey" style="margin-top:18px">
+            Please do not include passwords, financial account details,
+            sensitive personal information or confidential third-party
+            information in this form.
+        </p>
+
+    </form>
+</div>
+
+<!-- OTHER CONTACT INFORMATION -->
+<div class="w3-container" style="margin-top:65px; margin-bottom:60px">
+    <h5 class="section-label">CONNECT WITH US</h5>
+    <h4>Building a Global Network Through Collaboration</h4>
+    <p>
+        GRAITE welcomes communication from researchers, academic
+        institutions, technology organisations, industry partners,
+        policymakers, innovators and individuals who share its vision
+        of advancing responsible AI for humanity.
+    </p>
+    <p>
+        For matters relating to a specific Country Chapter, please
+        mention the relevant country in your enquiry.
+    </p>
+    <p>
+        <b>General Contact:</b> [Insert Official Email Address]
+    </p>
+    <p>
+        <b>Media & Communications:</b> [Insert Media Contact Email]
+    </p>
+    <p>
+        <b>Privacy & Data Protection:</b> [Insert Privacy Contact Email]
+    </p>
+</div>

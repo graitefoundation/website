@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GRAITE :: Global Research in AI Technologies & Engineering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/graite/">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+<style>
+
+html, body {font-size:16px;color:#494456;background: linear-gradient(110deg, #F3EDFF 0%, #F8F5FF 50%, #FFFFFF 100%);font-family: "Poppins", sans-serif;}
+h1,h2,h3,h4,h5{font-family: "Poppins", sans-serif;color:#292536}
+h1,h2,h3{font-weight:800; line-height:95%}
+
+h1{font-size:36px!important;}
+p{}
+.w3-bar-block{font-weight:400 !important}
+
+
+.photo-grid {column-count:2;column-gap:16px}
+.photo-grid img {display:block;width:100%;margin-top:16px;opacity:0.8;cursor:pointer}
+.photo-grid img:hover {opacity:1}
+
+dialog {border:0; padding:0;width:min(900px,90%);}
+dialog::backdrop {background:rgba(0,0,0,0.85);}
+
+@media (max-width:600px) {
+  .photo-grid {column-count:1}
+}
+.section-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8064C9;
+}
+.section-label::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 3px;
+    margin-top: 13px;
+    background: linear-gradient(90deg, #8064C9, #C4B1F0);
+    border-radius: 10px;
+}
+.sidebar-tagline {  
+    color: #292536;  
+    font-size: 18px;
+}
+.sidebar-nav a {
+    display: inline-block;
+    position: relative; 
+    color: #34303F;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 9px 0;
+    transition: color 0.25s ease;
+}
+
+/* Underline */
+.sidebar-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #8064C9, #B9A2EC);
+    transition: width 0.3s ease;
+}
+
+
+/* Hover underline */
+.sidebar-nav a:hover::after {
+    width: 30%;
+}
+
+/* Active underline stays visible */
+.sidebar-nav a.active::after,
+.sidebar-nav a[aria-current="page"]::after {
+    width: 30%;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active,
+.sidebar-nav a[aria-current="page"] {
+    color: #7655B8;
+}
+
+.country-flag {
+    width: 32px;
+    height: 22px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+    min-height: 38px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-white w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3;width:300px;font-weight:bold;"
+     id="mySidebar">
+
+    <br>
+
+    <a href="javascript:void(0)"
+       onclick="w3_close()"
+       class="w3-button w3-hover-none w3-hide-large w3-display-topleft"
+       style="width:100%;font-size:22px">×</a>
+
+    <div class="w3-container" href="/graite/home" data-page="home">
+        <img src="assets/images/logo.png" width="160" alt="GRAITE Logo">
+
+        <h3 class="w3-padding-16 sidebar-tagline">
+            <b>Global Research in AI Technologies & Engineering</b>
+        </h3>
+    </div>
+
+    <div class="w3-bar-block sidebar-nav">
+ 
+
+        <a href="/graite/" data-page="home" class="w3-bar-item w3-button w3-hover-none">
+            About us
+        </a>
+
+        <a href="/graite/research" data-page="research" class="w3-bar-item w3-button w3-hover-none">
+            Research Mission
+        </a>
+
+        <a href="/graite/education" data-page="education" class="w3-bar-item w3-button w3-hover-none">
+            Education Mission
+        </a>
+
+        <a href="/graite/services" data-page="services" class="w3-bar-item w3-button w3-hover-none">
+            Engineering Services
+        </a>
+
+
+        <a href="/graite/governance" data-page="governance" class="w3-bar-item w3-button w3-hover-none">
+           Governance
+        </a>
+
+         <a href="/graite/chapters" data-page="chapters" class="w3-bar-item w3-button w3-hover-none">
+           Chapters
+        </a>
+
+
+         <a href="/graite/join" data-page="join" class="w3-bar-item w3-button w3-hover-none">
+           Join
+        </a>
+        <a href="/graite/faq" data-page="faq" class="w3-bar-item w3-button w3-hover-none">
+           F.A.Q
+        </a>
+
+        <a href="/graite/contact" data-page="contact" class="w3-bar-item w3-button w3-hover-none">
+            Contact
+        </a>
+         <a href="/graite/subscribe" data-page="subscribe" class="w3-bar-item w3-button w3-hover-none">
+            Subscribe
+        </a>
+
+
+        <a href="/graite/terms" data-page="terms" class="w3-bar-item w3-button w3-hover-none">
+            Terms of use
+        </a>
+
+        <a href="/graite/privacy" data-page="privacy" class="w3-bar-item w3-button w3-hover-none">
+            Privacy Policy
+        </a>
+
+    </div>
+</nav>
+
+
+<!-- Mobile header -->
+<header class="w3-container w3-top w3-hide-large w3-purple w3-xlarge w3-padding">
+
+    <a href="javascript:void(0)"
+       class="w3-button w3-hover-none w3-margin-right"
+       onclick="w3_open()">☰</a>
+
+    <span>GRAITE</span>
+
+</header>
+
+
+<!-- Mobile overlay -->
+<div class="w3-overlay w3-hide-large"
+     onclick="w3_close()"
+     style="cursor:pointer"
+     id="myOverlay"></div>
+
+
+<!-- Main SPA content -->
+<main class="w3-main"
+      style="margin-left:340px;margin-right:40px">
+
+    <div id="pageContent"
+         class="w3-container w3-margin-32"
+         style="margin-top:80px"> 
+
+    </div>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="w3-light-grey w3-container w3-center w3-padding-32">
+ 
+
+</footer>
+
+
+<script>
+
+// ========================================
+// GRAITE SPA CONFIGURATION
+// ========================================
+
+const BASE_PATH = "/graite/";
+
+const sidebar = document.getElementById("mySidebar");
+const overlay = document.getElementById("myOverlay");
+
+const pageContent = document.getElementById("pageContent");
+
+const navLinks = document.querySelectorAll(".sidebar-nav a");
+
+const allowedPages = [
+    "home",
+    "about",
+    "research",
+    "education",
+    "services",
+    "projects",
+    "governance",
+    "governance1",
+    "chapters",
+    "associates",
+    "partners",
+    "members",
+    "join",
+    "terms",
+    "privacy",
+    "faq",
+    "contact",
+    "subscribe"
+];
+
+// ========================================
+// SIDEBAR FUNCTIONS
+// ========================================
+
+function w3_open() {
+
+    sidebar.style.display = "block";
+    overlay.style.display = "block";
+
+}
+
+function w3_close() {
+
+    sidebar.style.display = "none";
+    overlay.style.display = "none";
+
+}
+
+
+// ========================================
+// GET CURRENT PAGE FROM URL
+// ========================================
+
+function getPageFromURL() {
+
+    let path = window.location.pathname;
+
+    // Remove /graite/
+    if (path.startsWith(BASE_PATH)) {
+        path = path.substring(BASE_PATH.length);
+    }
+
+    // Remove trailing slash
+    path = path.replace(/\/+$/, "");
+
+    // Default page
+    if (path === "" || path === "index.html") {
+        return "home";
+    }
+
+    return allowedPages.includes(path) ? path : "home";
+
+}
+
+
+// ========================================
+// UPDATE ACTIVE MENU
+// ========================================
+
+function updateActiveMenu(page) {
+
+    navLinks.forEach(link => {
+
+        const active = link.dataset.page === page;
+
+        link.classList.toggle("active", active);
+
+        if (active) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+
+    });
+
+}
+
+
+// ========================================
+// LOAD PAGE
+// ========================================
+
+async function loadPage(page, updateHistory = true) {
+
+    if (!allowedPages.includes(page)) {
+        page = "home";
+    }
+
+    try {
+
+        // Load HTML from pages folder
+        const response = await fetch(
+            BASE_PATH + "pages/" + page + ".html"
+        );
+
+        if (!response.ok) {
+            throw new Error("HTTP " + response.status);
+        }
+
+        const html = await response.text();
+
+        // Insert content
+        pageContent.innerHTML = html;
+
+        // Update menu
+        updateActiveMenu(page);
+
+        // Clean URL
+        const newURL = BASE_PATH + page;
+
+        // Browser history
+        if (updateHistory &&
+            window.location.pathname !== newURL) {
+
+            history.pushState(
+                { page: page },
+                "",
+                newURL
+            );
+
+        }
+
+        // Scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+        // Close mobile sidebar
+        if (window.innerWidth <= 992) {
+            w3_close();
+        }
+
+    } catch (error) {
+
+        console.error("GRAITE SPA Error:", error);
+
+        pageContent.innerHTML = `
+            <div class="w3-container">
+                <h2>Page not found</h2>
+                <p>Unable to load this page.</p>
+            </div>
+        `;
+
+    }
+
+}
+
+
+// ========================================
+// MENU CLICK HANDLER
+// ========================================
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function(event) {
+
+        event.preventDefault();
+
+        const page = this.dataset.page;
+
+        loadPage(page, true);
+
+    });
+
+});
+
+
+// ========================================
+// BACK / FORWARD BUTTONS
+// ========================================
+
+window.addEventListener("popstate", function() {
+
+    const page = getPageFromURL();
+
+    loadPage(page, false);
+
+});
+
+
+// ========================================
+// INITIAL PAGE LOAD
+// ========================================
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const page = getPageFromURL();
+
+    loadPage(page, false);
+
+});
+
+</script>
+
+</body>
+</html>
+
+</html>
